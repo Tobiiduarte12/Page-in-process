@@ -2,9 +2,10 @@
 /* font-family: 'Roboto', sans-serif; */
 
 :root {
-    --background: #1A40E8;
+    --background: #1a40e8;
     --primary: #0AFFC8;
     --other-background: #0295E3;
+    --fondo-pag: #002043;
 }
 
 * {
@@ -13,6 +14,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    /* border: 1px solid; */
 }
 
 .header {
@@ -24,12 +26,17 @@
     align-items: center;
     justify-content: space-between;
     height: 100px;
+    position: fixed;
+    top: 0;
 }
 
 .logo {
     border-radius: 15px;
     width: 70px;
     height: 70px;
+    display: flex;
+    justify-content: flex-start;
+
 }
 
 .nav-container,
@@ -40,11 +47,91 @@
     font-size: 15px;
     font-weight: 500;
     
-    
 }
 
 .nav-list a{
     color: var(--primary);
     font-family: 'Roboto', sans-serif;
     font-style: italic;
+}
+
+main {
+    background-color: var(--fondo-pag);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #0AFFC8;
+    width: 100%;
+}
+
+#hero {
+    margin-top: 100px;
+    padding: 70px 0px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-info h1 {
+    color: var(--other-background);
+    font-size: 55px;
+    min-width: 500px;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-info p {
+    font-size: 14px;
+    width: 90%;
+    max-width: 1200px;
+    color: var(--primary);
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    background-color: var(--background);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.hero-info h2 {
+    color: #ffff;
+}
+
+.hero-info a{
+    color: #ffff;
+    background: linear-gradient(0deg, rgba(20,15,87,1) 46%, rgba(255,2,2,1) 87%);
+
+    width: 120px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.hero-img {
+    width: 300px;
+    background: linear-gradient(0deg, rgba(20,15,87,1) 46%, rgba(255,2,2,1) 87%);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.img-tobi {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
