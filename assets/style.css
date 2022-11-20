@@ -92,7 +92,10 @@ main {
 }
 
 .hero-info h1 {
-    color: var(--other-background);
+    background: linear-gradient(180deg, rgba(16,98,189,1) 16%, rgba(9,207,231,1) 85%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
     font-size: 55px;
     font-weight: 800;
     font-family: 'Roboto', sans-serif;
