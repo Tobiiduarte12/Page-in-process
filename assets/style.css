@@ -18,25 +18,24 @@
 }
 
 .header {
-    background-color: var(--background);
+    background: linear-gradient(180deg, rgba(16,98,189,1) 16%, rgba(0,32,67,1) 85%);
     display: flex;
-    padding: 30px;
+    padding: 10px 10px;
     border-radius: 0px 0px 10px 10px;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
     position: fixed;
-    top: 0;
+    gap: 15px;
+    border-bottom: 1px solid var(--fondo-pag);
 }
 
 .logo {
     border-radius: 15px;
     width: 70px;
-    height: 70px;
     display: flex;
     justify-content: flex-start;
-
+    margin-bottom: 25px;
 }
 
 .nav-container,
@@ -53,6 +52,15 @@
     color: var(--primary);
     font-family: 'Roboto', sans-serif;
     font-style: italic;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-list a:hover {
+    background: linear-gradient(180deg, rgba(16,98,189,1) 16%, rgba(0,32,67,1) 85%);
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid var(--primary);
 }
 
 main {
@@ -62,7 +70,6 @@ main {
     align-items: center;
     justify-content: center;
     color: #0AFFC8;
-    width: 100%;
 }
 
 #hero {
@@ -72,6 +79,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    width: 100vw;
+    height: 100vh;
 } 
 
 .hero-info {
@@ -84,14 +94,13 @@ main {
 .hero-info h1 {
     color: var(--other-background);
     font-size: 55px;
-    min-width: 500px;
     font-weight: 800;
     font-family: 'Roboto', sans-serif;
 }
 
 .hero-info p {
     font-size: 14px;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     color: var(--primary);
     font-family: 'Roboto', sans-serif;
@@ -99,21 +108,24 @@ main {
     background-color: var(--background);
     border-radius: 15px;
     padding: 20px;
+    text-align: center;
 }
 
 .hero-info h2 {
     color: #ffff;
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
 }
 
 .hero-info a{
     color: #ffff;
     background: linear-gradient(0deg, rgba(20,15,87,1) 46%, rgba(255,2,2,1) 87%);
-
-    width: 120px;
+    align-items: center;
+    justify-content: center;
     padding: 10px 25px;
     border-radius: 20px;
     font-size: 14px;
-    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .hero-img {
@@ -135,3 +147,112 @@ main {
     justify-content: center;
 
 }
+
+/* ----------------section 2------------------------ */
+#cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+}
+
+.sobre-mi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background);
+    border-radius: 20px;
+    max-width: 1200px;
+    height: 100%;
+}
+
+.sobre-mi h2 {
+    padding: 10px;
+    background-color: #002043;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.sobre-mi p {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: var(--fondo-pag);
+    color: #ffff;
+    border-radius: 15px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.info-cards {
+    display: flex;
+    width: 90%;
+    background-color: var(--fondo-pag);
+    padding: 50px 0px;
+    justify-content: space-around;
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--background);
+    border-radius: 10px;
+    max-width: 240px;
+    color: #ffff;
+}
+.card h3 {
+    text-transform: uppercase;
+    background-color: #002043;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 15px 5px;
+    color: var(--primary);
+}
+
+
+.card p {
+    font-size: 14px;
+    font-weight: 500;
+}
+.card p span {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+.ul-redes {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* foooteeerrr-----------  */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--fondo-pag);
+}
+
+#menu-toggle,
+.menu-label {
+    display: none;
+}
+
