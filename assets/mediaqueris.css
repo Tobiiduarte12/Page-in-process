@@ -38,7 +38,7 @@
 @media (max-width: 466px) {
     .nav-list {
         position: absolute;
-        top: 170px;
+        top: 100px;
         left: 5%;
         right: 4%;
         width: 90%;
@@ -56,12 +56,12 @@
     .header {
         height: 20vh;
         position: absolute;
+        flex-direction: row;
     }
 
     .menu-label {
         display: flex;
         cursor: pointer;
-        width: 100%;
     }
 
     #menu-toggle:checked + .nav-list {
