@@ -193,6 +193,7 @@ main {
     border-radius: 15px;
     width: 80%;
     margin-bottom: 30px;
+    font-style: italic;
 }
 
 .info-cards {
